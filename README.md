@@ -25,3 +25,9 @@ https://www.kaggle.com/residentmario/l1-norms-versus-l2-norms
 
 Q: Specifisit vs Sensitivity 
 https://en.wikipedia.org/wiki/Sensitivity_and_specificity
+
+Q: Why and when do Best subset selection and forward/backward stepwise selection lead to different models
+A: Best subset selection considers all possible feature combinations and hence may have better model vs stepwise selection in case there's multicolinearity among the features. 
+
+Q: Why do RSS & R2 always improve when we add more features
+A: RSS & R2 are metrics based on training data, hence will always improve on feature addition as the fit gets better. Hence, we want to use error based on training data not test data 
