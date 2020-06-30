@@ -23,9 +23,6 @@ https://www.statisticshowto.com/posterior-distribution-probability/
 Q: L2 vs L1
 https://www.kaggle.com/residentmario/l1-norms-versus-l2-norms
 
-Q: Specifisit vs Sensitivity 
-https://en.wikipedia.org/wiki/Sensitivity_and_specificity
-
 Q: Why and when do Best subset selection and forward/backward stepwise selection lead to different models
 A: Best subset selection considers all possible feature combinations and hence may have better model vs stepwise selection in case there's multicolinearity among the features. 
 
