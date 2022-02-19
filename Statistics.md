@@ -28,3 +28,8 @@ A: Best subset selection considers all possible feature combinations and hence m
 
 Q: Why do RSS & R2 always improve when we add more features
 A: RSS & R2 are metrics based on training data, hence will always improve on feature addition as the fit gets better. Hence, we want to use error based on training data not test data 
+
+Q: What does it mean for an experiment to be underpowered, Does this mean that a small sample leads to a “conservative” evaluation of the treatment effect?
+A: No, If your sample gets really small, your chance of discovering effects that aren’t really there goes up!. Intuition: random noise in the data leads to more chance differences in small samples.
+
+
