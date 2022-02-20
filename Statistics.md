@@ -32,4 +32,9 @@ A: RSS & R2 are metrics based on training data, hence will always improve on fea
 Q: What does it mean for an experiment to be underpowered, Does this mean that a small sample leads to a “conservative” evaluation of the treatment effect?
 A: No, If your sample gets really small, your chance of discovering effects that aren’t really there goes up!. Intuition: random noise in the data leads to more chance differences in small samples.
 
+Q: In Matching, why use Matching - why not just control for the confounders ?
+A: The number of confounds might also be large relative to the number of observations we have (= low statistical power).
+This also assumes that the income and GPA impact years in school, as well as Scholarship, linearly. What if they do not? Perhaps there is an income cutoff, for example.
+Linear regression with controls yields a model that will extrapolate to unobserved units. For example, you might never observe an individual who had a GPA > 3.9 and median income < 20,000 at the same time in your data, but your model will still extrapolate to that non-existent person. This is possible because of the linear additivity assumptions the model is enforcing.- Matching on covariates means you focus on a local sub-population, and no extrapolation can happen.
+An advantage of coarsened exact matching over simply controlling for things is that matching requires no functional assumptions, i.e., you get away from model dependence in your findings. Depending on what controls you include in a typical regression model, your estimates will change… matching gets away from this.
 
