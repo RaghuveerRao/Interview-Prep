@@ -69,14 +69,14 @@ Constraints:
 
 
 Q: Sample from a probability distribution 
-
 Example probs = [0.5, 0.25, 0.25] 
 Want to return an index of a single sample from this distribution 
 Example, want to return 0 w/ 50%, 1 w/ 25%, 2 w/ 25%  
-
   Test case 2 
   Example probs = [0.5, 0.25, 0.20, 0.05] #normalized sum 1  
   Example, want to return 0 w/ 50%, 1 w/ 25%, 2 w/ 20% , 3 w/5% 
+  
+Ans: Basically, make a cumulative probability distribution (CDF) array. Basically, the value of the CDF for a given index is equal to the sum of all values in P equal to or less than that index. Then you generate a random number between 0 and 1 and do a binary search (or linear search if you want)
 
 Q: Find the Largest Sum Contiguous Subarray
 https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/
