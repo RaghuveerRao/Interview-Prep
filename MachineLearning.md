@@ -38,3 +38,15 @@ Q: Bagging/Boosting - Bias/Variance trade of
 Q: What's the difference between LightGBM & XGBoost  
 
 Q: Predict probablistic outpu....  
+
+
+## Coding Rounds
+Q: This question is an implementation of a markov chain to predict the next word given an initial "training" text. The premise of this question is that given any input_word, predict what the next word will be based on the occurrences of words following the input_word in the training text. Using fancy words, this is a markov chain.
+
+The input is a block of text which is provided (see below).
+
+Example Input:
+Feel free to use whatever you want. The shorter the easier to use.
+
+corpus = 'The sky is blue and this tree is green.'
+Given this input, if we input "is" into the model, the output should be "blue" 50% of the time and "green" the other 50%.
