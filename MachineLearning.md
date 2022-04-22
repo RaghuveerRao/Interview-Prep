@@ -42,11 +42,40 @@ Q: Predict probablistic outpu....
 
 ## Coding Rounds
 Q: This question is an implementation of a markov chain to predict the next word given an initial "training" text. The premise of this question is that given any input_word, predict what the next word will be based on the occurrences of words following the input_word in the training text. Using fancy words, this is a markov chain.
-
-The input is a block of text which is provided (see below).
-
 Example Input:
 Feel free to use whatever you want. The shorter the easier to use.
-
 corpus = 'The sky is blue and this tree is green.'
 Given this input, if we input "is" into the model, the output should be "blue" 50% of the time and "green" the other 50%.
+
+
+Q: You are given an integer array coins representing coins of different denominations and an integer amount representing a total amount of money.
+Return the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1.
+
+You may assume that you have an infinite number of each kind of coin.
+
+Example 1:
+Input: coins = [1,2,5], amount = 11
+Output: 3
+Explanation: 11 = 5 + 5 + 1
+
+Example 2:
+Input: coins = [2], amount = 3
+Output: -1
+
+Constraints:
+1 <= coins.length <= 12
+1 <= coins[i] <= 2^31 - 1
+0 <= amount <= 10^4
+
+
+Q: Sample from a probability distribution 
+
+Example probs = [0.5, 0.25, 0.25] 
+Want to return an index of a single sample from this distribution 
+Example, want to return 0 w/ 50%, 1 w/ 25%, 2 w/ 25%  
+
+  Test case 2 
+  Example probs = [0.5, 0.25, 0.20, 0.05] #normalized sum 1  
+  Example, want to return 0 w/ 50%, 1 w/ 25%, 2 w/ 20% , 3 w/5% 
+
+  
