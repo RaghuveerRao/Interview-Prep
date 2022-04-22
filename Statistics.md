@@ -38,3 +38,5 @@ This also assumes that the income and GPA impact years in school, as well as Sch
 Linear regression with controls yields a model that will extrapolate to unobserved units. For example, you might never observe an individual who had a GPA > 3.9 and median income < 20,000 at the same time in your data, but your model will still extrapolate to that non-existent person. This is possible because of the linear additivity assumptions the model is enforcing.- Matching on covariates means you focus on a local sub-population, and no extrapolation can happen.
 An advantage of coarsened exact matching over simply controlling for things is that matching requires no functional assumptions, i.e., you get away from model dependence in your findings. Depending on what controls you include in a typical regression model, your estimates will change… matching gets away from this.
 
+Q: What is T test – write the form of the T stat equation  
+
